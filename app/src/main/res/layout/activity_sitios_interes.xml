@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SitiosInteres">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <io.github.florent37.shapeofview.shapes.ArcView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:elevation="4dp"
+            app:shape_arc_height="20dp"
+            app:shape_arc_position="bottom">
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/parques_boton"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Parques"
+                android:textSize="50dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:fontFamily="@font/alegreya_sc"
+                android:visibility="invisible"
+                android:layout_marginBottom="30dp"/>
+
+            <TextView
+                android:id="@+id/txt1Ingles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(Park's)"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:fontFamily="@font/alegreya_sc"
+                android:visibility="invisible"
+                android:layout_marginTop="36dp"/>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/hoteles_boton"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hoteles"
+                android:textSize="50dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:fontFamily="@font/alegreya_sc"
+                android:visibility="invisible"
+                android:layout_marginBottom="30dp"/>
+
+            <TextView
+                android:id="@+id/txt2Ingles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(Hotel's)"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:fontFamily="@font/alegreya_sc"
+                android:visibility="invisible"
+                android:layout_marginTop="36dp"/>
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/restaurantes_boton"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Restaurantes"
+                android:textSize="50dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:fontFamily="@font/alegreya_sc"
+                android:visibility="invisible"
+                android:layout_marginBottom="30dp"/>
+
+            <TextView
+                android:id="@+id/txt3Ingles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(Restaurant's)"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:fontFamily="@font/alegreya_sc"
+                android:visibility="invisible"
+                android:layout_marginTop="36dp"/>
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/tiendas_boton"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/txt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tiendas"
+                android:textSize="50dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:fontFamily="@font/alegreya_sc"
+                android:visibility="invisible"
+                android:layout_marginBottom="30dp"/>
+
+            <TextView
+                android:id="@+id/txt4Ingles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(Shop´s)"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:fontFamily="@font/alegreya_sc"
+                android:visibility="invisible"
+                android:layout_marginTop="36dp"/>
+
+            <TextView
+                android:id="@+id/txtDato"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/AtrasImg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_baseline_arrow_back_ios_new_24"/>
+
+        </io.github.florent37.shapeofview.shapes.ArcView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RecyclerSitios"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

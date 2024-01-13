@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/SeleccionarDetalles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/TxtAutorItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Autor"
+            android:textSize="25dp"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:fontFamily="@font/alegreya_sc"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Puntuación:"
+                android:textSize="25dp"
+                android:fontFamily="@font/alegreya_sc"/>
+
+            <TextView
+                android:id="@+id/TxtPuntuacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5.0"
+                android:textSize="35dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@android:color/holo_orange_dark"
+                android:fontFamily="@font/alegreya_sc" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/TxtContenidoItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contenido"
+            android:textSize="25dp"
+            android:fontFamily="@font/alegreya_sc"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
